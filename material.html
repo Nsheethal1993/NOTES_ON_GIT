@@ -1,67 +1,73 @@
 <!Doctype html>
 <html>
-    <title>
- NOTES FOR GIT AND COMMANDS USED
-    </title>
-    <Style>
-    h1{
-        color:red;
+<title><b>NOTES FOR GIT AND COMMANDS USED</b> </title>
+<Style>
+    h1 {
+        color: red;
         background-color: aqua;
     }
-    h2{
-        color:palevioletred;
+    h2 {
+        color: palevioletred;
         background-color: black;
 
     }
-    h5{
-        color:yellow;
+    h3 {
+        color: yellow;
         background-color: green;
 
     }
-    </Style>
-    <body>
-        <h1> First Create a new repository</h1>
-        <p1>Create +sign in the right corner of github 2) click on new repository 3) name the repository 4) make it private or public and then click create</p>
+</Style>
+
+<body>
+    <h1> First Create a new repository</h1>
+    <p1>Create +sign in the right corner of github 2) click on new repository 3) name the repository 4) make it private
+        or
+        public and then click create</p>
         <p2> go to git bash and click git clone uRL (using https url for now</p2>
         <p3> cd NOTES_ON_GIt</p3>
         <p4>ls</p4>
         <p5>touch material.html (name of the file)(touch command helps to create a new file )</p5>
         <p6> code material.html(this code command helps to open material.html in vscode</p6>
-       <h2>COMMANDS TO PUSH AND COMMIT</h2>
-       <p7> I have tried to push the above changes till p6</p7>
-       <p8> 1)I opened git bash 
-           2) checked the untracked files using command : GIT STATUS 
-           3) Firstly i want to add material.html file to git repo so i Used command :GIT ADD material.html 
-           4) Now i want to commit the file so that i can see in github : GIT COMMIT -m "name of the message" , and pushed to github by using command GIT PUSH
+        <h2>COMMANDS TO PUSH AND COMMIT</h2>
+        <p7> I have tried to push the above changes till p6</p7>
+        <p8> 1)I opened git bash
+            2) checked the untracked files using command : GIT STATUS
+            3) Firstly i want to add material.html file to git repo so i Used command :GIT ADD material.html
+            4) Now i want to commit the file so that i can see in github : GIT COMMIT -m "name of the message" , and
+            pushed
+            to github by using command GIT PUSH
         </p8>
-        
         <p9> way to pull the changes from server to local machine </p9>
-        <p10>In organization people make changes and we need to bring that code to local machine to simulate that i have created a change in material.html which is pushed to github and i will pull that to local 
-            command used :GIT PULL 
+        <p10>In organization people make changes and we need to bring that code to local machine to simulate that i have
+            created a change in material.html which is pushed to github and i will pull that to local
+            command used :GIT PULL
         </p10>
         <p11> way to create merge conflict (wrote in small letters)</p11>
 
-        <p12> i have created a merge conflict by changing same line in local computer and changed same line in github difference is i worte p11 in small letters locally and p11 in cqapital letters in github and i tried to push top github what the chnages i did locally it threw a error saying 
-                error: failed to push some refs to 'https://github.com/Nsheethal1993/NOTES_ON_GIT.git'
-                hint: Updates were rejected because the remote contains work that you do
-                hint: not have locally. This is usually caused by another repository pushing
-                hint: to the same ref. You may want to first integrate the remote changes
-                hint: (e.g., 'git pull ...') before pushing again.
-                hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-                so before pushing local chnages : firstly we need to bring github changed locally by using command git pull then solve merge conflicts now git commit -am "commit changes "
-   and the git push .
-   
+        <p12> i have created a merge conflict by changing same line in local computer and changed same line in github
+            difference is i worte p11 in small letters locally and p11 in cqapital letters in github and i tried to push
+            top
+            github what the chnages i did locally it threw a error saying
+            error: failed to push some refs to 'https://github.com/Nsheethal1993/NOTES_ON_GIT.git'
+            hint: Updates were rejected because the remote contains work that you do
+            hint: not have locally. This is usually caused by another repository pushing
+            hint: to the same ref. You may want to first integrate the remote changes
+            hint: (e.g., 'git pull ...') before pushing again.
+            hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+            so before pushing local chnages : firstly we need to bring github changed locally by using command git pull
+            then
+            solve merge conflicts now git commit -am "commit changes "
+            and the git push .
             <p/12>
-
-            <p13> 
+             <p13>
                 git log : show the history of all commits done
-            </p13>
+             </p13>
+             <h3> git reset --hard and git reset --hard origin/master (will take to previous version of commit file </h3>
+                <h4> SWITCHING BRANCHES </h4>
+                <p16>git branch :tells current branch ,git checkout nameofthebranch ,git merge (if we want to merge from
+                    our
+                    branch to master branch)</p16>
+                <p14> TO DELETE BRANCHES : git branch -D name of the branch</p14>
 
-        <h4> git reset --hard and git reset --hard origin/master (will take to previous version of commit file</h4>
-
-    <h5> SWITCHING BRANCHES  </h5>
-      
-        </body>
-
-
+</body>
 </html>
