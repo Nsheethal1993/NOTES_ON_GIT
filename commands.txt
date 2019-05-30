@@ -1,0 +1,80 @@
+Git clone <url> 
+1) makes a copy of a repository 
+2)stores it on your computer 
+3)a fork creates your own copy of someone else repo
+
+git add 
+after cloning and making changes to local repo we want to save the changes made to that file
+
+git commit :git commit -m "messagename"
+pushing the saved changes to github repository 
+
+git status:whats currenty going inside the repository 
+
+BRANCHING :DIFFERENT VERSIONS OF THE CODE 
+
+git push :sends the commited changes to remote repo 
+more explicitly could write 
+git push origin master
+git diff :shows the diff between old and new file.
+
+git pull :retreive changes from remote repo
+
+Merge conflicts :
+if 2 developers try to changes same line code change 
+resolve coflict : 
+git pull 
+(says merge cconflict ) 
+
+1) fix the conflict :whih lactual version of code is needed 
+git status:
+git commit -am "message"
+git push 
+
+
+GIT LOG : tells the history of all commits made
+
+git reset : go to the previous version of code 
+
+git reset --hard <commit>
+git reset --hard origin/master (reverts back top remote repo version) and loose all previous version changes 
+
+git reset --hard 7985679 (this number is previous commit number to see that use git log )
+
+BRANCHING :
+different version of code 
+
+1)we need to make a chnage 
+2) we need to add a new feature
+
+and merge it back to master branch 
+
+git branch :shows all the branches 
+to create a new breanch :
+
+git branch <branch name>
+
+switch to another branch 
+git checkout <branch name>
+
+git merge :
+
+git merge <branch name>
+
+cueently in master branch but wnt these changes to sheethal branch 
+
+git merge sheethal (which branch we want to push ) the commits chnages from sheethal branch will be merged to master branch
+
+to delete branch 
+
+git branch -D branch name
+
+PULL REQUESTS :
+happens in open source project 
+
+
+
+
+
+
+
